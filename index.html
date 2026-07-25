@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>ポートフォリオ テーマ プレビュー — 4種から選ぶ</title>
+<style>
+  :root{
+    --bg:#0d1017; --panel:#151a24; --line:#252c3a; --ink:#eef1f7; --muted:#9aa3b7;
+    --accent:#6f8cff; --sans:system-ui,-apple-system,"Hiragino Kaku Gothic ProN","Noto Sans JP",sans-serif;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    font-family:var(--sans); color:var(--ink); line-height:1.7;
+    background:radial-gradient(120% 60% at 50% -10%,rgba(111,140,255,.14),transparent 60%),var(--bg);
+    -webkit-font-smoothing:antialiased; min-height:100vh;
+  }
+  .wrap{max-width:1120px;margin:0 auto;padding:56px clamp(20px,5vw,40px) 80px;}
+  header{margin:0 0 40px;}
+  .eyebrow{font-size:12px;letter-spacing:.28em;text-transform:uppercase;color:var(--accent);font-weight:700;margin:0 0 12px;}
+  h1{font-size:clamp(26px,4vw,40px);font-weight:800;letter-spacing:-.02em;margin:0 0 12px;}
+  .lead{color:var(--muted);font-size:clamp(15px,1.8vw,17px);max-width:60ch;margin:0;}
+  .grid{display:grid;grid-template-columns:repeat(2,1fr);gap:22px;margin-top:36px;}
+  @media(max-width:720px){.grid{grid-template-columns:1fr;}}
+  .card{
+    display:flex;flex-direction:column;background:var(--panel);border:1px solid var(--line);
+    border-radius:18px;overflow:hidden;text-decoration:none;color:inherit;
+    transition:transform .25s ease,border-color .25s ease,box-shadow .25s ease;
+  }
+  .card:hover{transform:translateY(-4px);border-color:var(--accent);box-shadow:0 24px 60px -30px rgba(111,140,255,.6);}
+  .shot{position:relative;aspect-ratio:16/10;overflow:hidden;background:#0a0c12;border-bottom:1px solid var(--line);}
+  .shot img{width:100%;height:100%;object-fit:cover;object-position:top center;display:block;}
+  .badge{position:absolute;top:12px;left:12px;font-size:11px;font-weight:700;letter-spacing:.04em;
+    padding:5px 11px;border-radius:999px;background:rgba(13,16,23,.7);color:#fff;backdrop-filter:blur(6px);border:1px solid rgba(255,255,255,.14);}
+  .body{padding:20px 22px 22px;}
+  .body h2{margin:0 0 4px;font-size:20px;font-weight:800;letter-spacing:-.01em;}
+  .body .no{font-family:ui-monospace,monospace;font-size:12px;color:var(--accent);}
+  .body p{margin:10px 0 0;color:var(--muted);font-size:14px;}
+  .cta{margin-top:16px;display:inline-flex;align-items:center;gap:8px;font-size:13px;font-weight:700;color:var(--accent);}
+  .cta svg{width:15px;height:15px;}
+  footer{margin-top:52px;color:var(--muted);font-size:12.5px;font-family:ui-monospace,monospace;letter-spacing:.04em;}
+</style>
+</head>
+<body>
+<div class="wrap">
+  <header>
+    <p class="eyebrow">Portfolio Builder · Theme Gallery</p>
+    <h1>4つのデザインから選べます</h1>
+    <p class="lead">各カードのサムネイルで雰囲気を確認し、開いて実物（サンプルデータ）を触ってみてください。選んだテーマに、あなたの実際のプロフィールと制作物が流し込まれます。</p>
+  </header>
+
+  <div class="grid">
+    <a class="card" href="themes/light-aurora.html" target="_blank" rel="noopener">
+      <div class="shot"><span class="badge">01 · ライト</span><img src="thumbs/light-aurora.jpg" alt="Light Aurora のプレビュー"></div>
+      <div class="body">
+        <span class="no">01</span>
+        <h2>Light Aurora</h2>
+        <p>白地に淡いオーロラ×すりガラス。清潔で読みやすく、採用担当にも万人向けの既定テーマ。</p>
+        <span class="cta">実物を開く <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </div>
+    </a>
+
+    <a class="card" href="themes/aurora.html" target="_blank" rel="noopener">
+      <div class="shot"><span class="badge">02 · ダーク</span><img src="thumbs/aurora.jpg" alt="Aurora Nocturne のプレビュー"></div>
+      <div class="body">
+        <span class="no">02</span>
+        <h2>Aurora Nocturne</h2>
+        <p>深いダーク×宇宙グラデーションのガラスモーフィズム。技術的な先進性・プロダクト感を強く。</p>
+        <span class="cta">実物を開く <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </div>
+    </a>
+
+    <a class="card" href="themes/light-sidebar.html" target="_blank" rel="noopener">
+      <div class="shot"><span class="badge">03 · ライト/ダーク</span><img src="thumbs/light-sidebar.jpg" alt="Light Sidebar のプレビュー"></div>
+      <div class="body">
+        <span class="no">03</span>
+        <h2>Light Sidebar</h2>
+        <p>左固定サイドバー＋右スクロール。ライト/ダーク切替可。情報量・案件数が多い人向け。</p>
+        <span class="cta">実物を開く <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </div>
+    </a>
+
+    <a class="card" href="themes/atelier.html" target="_blank" rel="noopener">
+      <div class="shot"><span class="badge">04 · 横スクロール</span><img src="thumbs/atelier.jpg" alt="Atelier のプレビュー"></div>
+      <div class="body">
+        <span class="no">04</span>
+        <h2>Atelier</h2>
+        <p>全セクションが横一列のパネル。ベージュ紙×ビビッドな青。作品性・こだわりを前面に。</p>
+        <span class="cta">実物を開く <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M9 7h8v8"/></svg></span>
+      </div>
+    </a>
+  </div>
+
+  <footer>portfolio-builder themes — 表示はサンプルデータ。選択後、あなたの実データで組み上がります。</footer>
+</div>
+</body>
+</html>
